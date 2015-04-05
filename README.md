@@ -43,6 +43,4 @@ Hardware:
       Memory: 16 GB
       Boot ROM Version: MBP112.0138.B11
       SMC Version (system): 2.19f12
-      Serial Number (system): C02P6DCGG3QD
-      Hardware UUID: 44CB5994-86A4-5BC1-8996-F47E07DE96EE
 ```
