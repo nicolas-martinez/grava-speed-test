@@ -44,3 +44,11 @@ Hardware:
       Boot ROM Version: MBP112.0138.B11
       SMC Version (system): 2.19f12
 ```
+And here is the `Java` version:
+```
+Picked up JAVA_TOOL_OPTIONS: -Xms1024m -Xmx2048m -XX:PermSize=256m -XX:MaxPermSize=1024m
+java version "1.7.0_72"
+Java(TM) SE Runtime Environment (build 1.7.0_72-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 24.72-b04, mixed mode)
+```
+The `Groovy` version is `2.3.7` as defined in [pom.xml](https://github.com/nicolas-martinez/grava-speed-test/blob/master/pom.xml).
