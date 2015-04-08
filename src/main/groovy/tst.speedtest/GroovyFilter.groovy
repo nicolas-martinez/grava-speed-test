@@ -7,8 +7,13 @@ class GroovyFilter {
 
     private List filter(int length) {
 
-        List items = (0..length).collect()
-        List even = items.findAll { item -> item > 0 && item.longValue() % 2 == 0 }
+        long start = System.currentTimeMillis();
+
+        List items = (0..length)
+        List even = items.findAll { int item -> item > 0 && item % 2 == 0 }
+
+        long elapsed = System.currentTimeMillis() - start;
+        println("GroovyTest: "+ even.size() +" elapsed: "+ elapsed);
 
         return even;
     }
@@ -16,9 +21,15 @@ class GroovyFilter {
     public static void main(String[] args) {
 
         long start = System.currentTimeMillis();
+
         GroovyFilter test = new GroovyFilter();
-        List list = test.filter(args[0] as int);
+        int testSize = args[0] as int
+        int repeat = args[1] as int
+        (1..repeat).each {
+            test.filter(testSize);
+        }
+
         long elapsed = System.currentTimeMillis() - start;
-        print("GroovyTest: "+ list.size() +" elapsed: "+ elapsed);
+        println("GroovyTest: for testSize=${testSize} and repeat=${repeat} total elapsed: "+ elapsed);
     }
 }
