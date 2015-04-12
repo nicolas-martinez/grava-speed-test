@@ -51,7 +51,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 24.72-b04, mixed mode)
 ```
 The `Groovy` version is `2.3.7` used as defined in [pom.xml](https://github.com/nicolas-martinez/grava-speed-test/blob/master/pom.xml).
 
-After implementing the suggestions from [stackoverflow](http://stackoverflow.com/questions/29460746/looking-for-ideas-on-how-to-improve-groovy-performance-in-the-specific-test) to use the specific types, removing exra `collect()` call from the original `groovy` code and introducing a warm up cycle from I'm still seeing that the `groovy` code is about `~5 times slower` than its `java` equivalent. 
+After implementing the suggestions from [stackoverflow](http://stackoverflow.com/questions/29460746/looking-for-ideas-on-how-to-improve-groovy-performance-in-the-specific-test) to use the specific types, removing extra `collect()` call from the original `groovy` code and introducing a warm up cycle from I'm still seeing that the `groovy` code is about `~5 times slower` than its `java` equivalent. 
 
 Additional tests can be run using `./speed-test.sh` (after the compilation performed by `Maven` in the target directory) to take `JUnit` out of equation. 
 
